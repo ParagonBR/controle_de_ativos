@@ -124,6 +124,7 @@ document.addEventListener('click', async (e) => {
 function downloadBlob(blob, nome_arquivo = 'Extração.xlsx') {
     // Convert your blob into a Blob URL (a special url that points to an object in the browser's memory)
     const blobUrl = URL.createObjectURL(blob);
+    console.log(blobUrl)
 
     // Create a link element
     const link = document.createElement("a");
